@@ -1,0 +1,41 @@
+.showcase-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.showcase-img {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.showcase-brands-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    top: -300px;
+    position: relative;
+    grid-gap: 30px;
+    margin: 0 10px;
+}
+
+.brand-card {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .showcase-wrapper {
+        width: 90%;
+    }
+    .showcase-brands-wrapper {
+        display: block;
+        top: 0;
+    }
+    .brand-card {
+        margin: 20px 0;
+    }
+}

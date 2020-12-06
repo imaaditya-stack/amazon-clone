@@ -1,0 +1,31 @@
+.todays-deals-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: -250px;
+}
+
+.todays-deals-products-wrapper {
+    margin: 0 10px;
+}
+
+.todays-deals-card-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.todays-deals-prize {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+    .todays-deals-wrapper {
+        width: 90%;
+        top: 0;
+    }
+    .todays-deals-card {
+        width: 100%;
+    }
+}
