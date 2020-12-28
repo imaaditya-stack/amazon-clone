@@ -1,0 +1,28 @@
+.SIC {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    max-width: 400px;
+    height: 450px;
+    max-height: 450px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.SIC__image {
+    object-fit: contain;
+}
+
+.SIC__title {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .SIC {
+        width: 100%;
+    }
+}

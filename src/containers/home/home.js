@@ -1,21 +1,19 @@
 import React from "react";
-import MainNavbar from "../../components/navbar";
-import Showcase from "../../components/showcase";
-import TodaysDeals from "../../components/today's-deals";
-import UptoSixtyPercentOff from "../../components/upto-60%-off";
-import UptoSeventyPercentOff from "../../components/upto-60%-off/seventy-percent-off";
-import HomeFurnishing from "../../components/home-furnishings";
-
-export default function home() {
+import Showcase from "../../components/Showcase";
+import Header from "../../components/Header";
+import TodaysDeals from "../../components/TodaysDeals";
+import BrandContainer from "../../components/BrandContainer";
+import BestSellers from "../../components/BestSellers";
+export default function Home() {
   document.body.style.backgroundColor = "#f4f4f4";
+
   return (
     <>
-      <MainNavbar />
+      <Header />
       <Showcase />
       <TodaysDeals />
-      <UptoSixtyPercentOff />
-      <HomeFurnishing />
-      <UptoSeventyPercentOff />
+      <BrandContainer />
+      <BestSellers />
     </>
   );
 }

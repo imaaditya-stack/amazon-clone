@@ -1,9 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-* {
-    font-family: "kumbh Sans", sans-serif;
+@font-face {
+    font-family: 'AmazonEmber';
+    src: url('./assests/fonts/AmazonEmber.ttf');
 }
 
-body,
+@font-face {
+    font-family: 'AmazonEmberBold';
+    src: url('./assests/fonts/AmazonEmberMedium.ttf');
+}
+
+:root {
+    --color-dark: #131921;
+    --color-text: #1c1c1c;
+    --color-background: #eee;
+}
+
+* {
+    font-family: 'AmazonEmber'
+}
+
+.bold-text {
+    font-family: 'AmazonEmberBold';
+}
+
 html {
     margin: 0;
+    padding: 0;
 }

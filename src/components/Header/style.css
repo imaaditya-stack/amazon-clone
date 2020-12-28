@@ -1,0 +1,87 @@
+.header {
+    background-color: var(--color-dark);
+    height: 60px;
+    max-height: 60px;
+}
+
+.header__logo {
+    width: 100px;
+    margin-top: 6px;
+}
+
+.in-text {
+    font-size: 14px;
+}
+
+.header__selectAddress {
+    display: flex !important;
+    flex-direction: column;
+    background-color: var(--color-dark) !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 13px !important;
+}
+
+.header__selectAddress:hover,
+.header__selectAddress:focus {
+    background-color: var(--color-dark) !important;
+    border: 1px solid #fff !important;
+    box-shadow: none !important;
+}
+
+.location_icon {
+    font-size: 18px !important;
+}
+
+.header__searchBar {
+    flex: 1;
+}
+
+.header__searchBarInput {
+    border: none !important;
+    margin-top: 6px;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.header__searchBarIcon {
+    background-color: #cd9042;
+    margin-top: 6px;
+    padding: 6px 10px;
+}
+
+.header__signIn,
+.header__Returns-Orders,
+.header__cartIcon {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-right: 6px;
+    color: #fff !important;
+}
+
+.header__cartIcon {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.cart-total-items {
+    color: #f0c14b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 100%;
+        max-height: 100%;
+    }
+    .header__signIn,
+    .header__Returns-Orders,
+    .header__cartIcon {
+        margin: 0;
+    }
+    .header__cartIcon {
+        text-align: left;
+    }
+}
