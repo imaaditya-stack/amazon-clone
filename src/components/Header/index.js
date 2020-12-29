@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
 import { Button, Navbar, Nav, FormControl, Image } from "react-bootstrap";
 import RoomIcon from "@material-ui/icons/Room";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 function Header() {
   const [user, setUser] = useState(null);
+
   const userData = useSelector((state) => state.userReducer);
   const products = useSelector((state) => state.cartReducer);
+
   useEffect(() => {
     userData ? setUser(userData.currentUser) : setUser(null);
   }, [userData]);

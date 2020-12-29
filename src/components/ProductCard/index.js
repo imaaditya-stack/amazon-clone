@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
 import StarRateIcon from "@material-ui/icons/StarRate";
-import CurrencyFormat from "react-currency-format";
-import "./style.css";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/actions/actions";
+import Currency from "../Currency";
+import "./style.css";
 
 function ProductCard({ id, image, name, ratings, price, history }) {
   const [added, setadded] = useState(false);
@@ -18,30 +18,25 @@ function ProductCard({ id, image, name, ratings, price, history }) {
 
   return (
     <div
-      className="product_card border"
+      className="product__card border bg-white"
       data-aos="fade-up"
       data-aos-duration="1200"
     >
-      <div className="product-content text-center">
-        <img src={image} alt="" className="img-fluid mb-2" />
-        <p className="p-0 m-0 product_name py-2">{name}</p>
+      <div className="product__info text-center">
+        <Image src={image} alt="" className="img-fluid mb-2" />
+        <p className="p-0 m-0 product__name py-2">{name}</p>
         {Array(ratings)
           .fill(null)
           .map(() => {
-            return <StarRateIcon className="rating_icon my-2" />;
+            return <StarRateIcon className="product__rating-icon my-2" />;
           })}
-        <p className="p-0 m-0 product_price mb-2">
-          <CurrencyFormat
-            value={price}
-            displayType={"text"}
-            thousandSeparator={true}
-            prefix={"₹"}
-          />
+        <p className="product__price mb-2">
+          <Currency price={price} />
         </p>
         {!added && (
           <Button
             variant="warning"
-            className="form_button addToCartBtn"
+            className="button--global"
             onClick={() => {
               handleAddToCart(id, name, image, price);
             }}
@@ -52,7 +47,7 @@ function ProductCard({ id, image, name, ratings, price, history }) {
         {added && (
           <Button
             variant="warning"
-            className="form_button addToCartBtn"
+            className="button--global"
             onClick={() => {
               history.push("/cart");
             }}

@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 @font-face {
-    font-family: 'AmazonEmber';
-    src: url('./assests/fonts/AmazonEmber.ttf');
+    font-family: "AmazonEmber";
+    src: url("./assests/fonts/AmazonEmber.ttf");
 }
 
 @font-face {
-    font-family: 'AmazonEmberBold';
-    src: url('./assests/fonts/AmazonEmberMedium.ttf');
+    font-family: "AmazonEmberBold";
+    src: url("./assests/fonts/AmazonEmberMedium.ttf");
 }
 
 :root {
@@ -16,14 +16,19 @@
 }
 
 * {
-    font-family: 'AmazonEmber'
+    font-family: "AmazonEmber";
 }
 
-.bold-text {
-    font-family: 'AmazonEmberBold';
+.text--bold {
+    font-family: "AmazonEmberBold";
 }
 
 html {
     margin: 0;
     padding: 0;
+}
+
+.button--global {
+    background-color: #f0c14b !important;
+    border: 1px solid #a88734 !important;
 }

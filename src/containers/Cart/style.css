@@ -1,0 +1,30 @@
+.cart__products {
+    background-color: #fff;
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.cart__initial-content {
+    margin: 30px;
+}
+
+.cart__main-div {
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .cart__products {
+        margin-right: 0px;
+        padding: 10px;
+        order: 2;
+    }
+    .cart__main-div {
+        margin: 10px;
+    }
+    .cart__initial-content {
+        margin: 10px;
+    }
+}

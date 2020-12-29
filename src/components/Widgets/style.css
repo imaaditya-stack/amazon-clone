@@ -1,0 +1,40 @@
+.widget {
+    position: relative;
+    top: -250px;
+}
+
+.widget__main-div {
+    margin: 0 24px;
+    padding: 20px;
+}
+
+.widget__products-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.widget__products-container>div {
+    text-align: center;
+}
+
+.widget__products-container>div>p {
+    margin: 10px 0;
+    color: #007185;
+}
+
+@media only screen and (max-width: 768px) {
+    .widget {
+        top: 0;
+        width: 100%;
+    }
+    .widget__main-div {
+        margin: 10px;
+    }
+    .widget__products-container {
+        display: block;
+    }
+    .widget__products-container>div {
+        margin: 20px 0;
+    }
+}

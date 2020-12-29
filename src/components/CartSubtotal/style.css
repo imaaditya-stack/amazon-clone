@@ -1,0 +1,15 @@
+.cart__subTotal-main-div>p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cart__subTotal {
+        width: 100%;
+    }
+    .cart__subTotal {
+        order: 1;
+    }
+    .purchase__protection {
+        text-align: center;
+    }
+}

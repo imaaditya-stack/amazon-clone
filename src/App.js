@@ -3,11 +3,11 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./index.css";
 
-import home from "./containers/home/home";
-import Login from "././components/Login";
-import Signup from "././components/Signup";
-import Products from "./containers/products/products";
-import Cart from "./components/Cart";
+import home from "./containers/Home/Home";
+import Login from "././components/Forms/Login";
+import Signup from "././components/Forms/Signup";
+import Products from "./containers/Products/Products";
+import Cart from "./containers/Cart/Cart";
 import { setUser } from "./redux/actions/actions";
 import { useDispatch } from "react-redux";
 
@@ -36,7 +36,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/products" component={Products} />
         <Route path="/cart" component={Cart} />
-      </Switch>
+      </Switch>{" "}
     </Router>
   );
 }

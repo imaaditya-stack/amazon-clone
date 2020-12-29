@@ -2,18 +2,18 @@ import {
     SET_USER,
     ADD_TO_CART,
     REMOVE_FROM_CART,
-    INCREMENT,
-    DECREMENT,
+    INCREMENT_QUANTITY,
+    DECREMENT_QUANTITY,
 } from "./types";
 
-export const setUser = (currentUser) => ({
+const setUser = (currentUser) => ({
     type: SET_USER,
     payload: {
         currentUser,
     },
 });
 
-export const addToCart = (productID, name, image, price) => ({
+const addToCart = (productID, name, image, price) => ({
     type: ADD_TO_CART,
     payload: {
         productID,
@@ -23,23 +23,25 @@ export const addToCart = (productID, name, image, price) => ({
     },
 });
 
-export const removeFromCart = (productID) => ({
+const removeFromCart = (productID) => ({
     type: REMOVE_FROM_CART,
     payload: {
         productID,
     },
 });
 
-export const incrementItem = (productID) => ({
-    type: INCREMENT,
+const incrementItem = (productID) => ({
+    type: INCREMENT_QUANTITY,
     payload: {
         productID,
     },
 });
 
-export const decrementItem = (productID) => ({
-    type: DECREMENT,
+const decrementItem = (productID) => ({
+    type: DECREMENT_QUANTITY,
     payload: {
         productID,
     },
 });
+
+export { setUser, addToCart, removeFromCart, incrementItem, decrementItem };

@@ -1,42 +1,33 @@
-.product_card {
+.product__card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 10px;
     padding: 20px;
-    background-color: white;
 }
 
-.product-content {
+.product__info {
     flex: 1;
 }
 
-.product_image {
-    margin-right: 40px;
-}
-
-.product_name {
+.product__name {
     font-size: 18px;
     font-family: "AmazonEmberBold";
 }
 
-.rating_icon {
+.product__rating-icon {
     color: #f0c14b !important;
 }
 
-.product_price {
+.product__price {
     color: #b20808;
     font-size: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-    .product_card {
+    .product__card {
         display: flex;
         flex-direction: column;
         padding: 10px;
-    }
-    .product_image {
-        margin-right: 0px;
-        margin-top: 5px;
     }
 }
