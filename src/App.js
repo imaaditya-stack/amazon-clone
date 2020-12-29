@@ -36,7 +36,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/products" component={Products} />
         <Route path="/cart" component={Cart} />
-      </Switch>{" "}
+      </Switch>
     </Router>
   );
 }
