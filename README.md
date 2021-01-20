@@ -1,5 +1,7 @@
 # Amazon Clone
 
+![Selection_006](https://user-images.githubusercontent.com/59827782/105172389-8eb48b80-5b45-11eb-8b7a-73002345dbba.png)
+
 Amazon Clone built using React, Hooks, Redux and Firebase
 
 ## Functionality
